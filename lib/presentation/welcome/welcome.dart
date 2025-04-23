@@ -1,5 +1,6 @@
 import 'package:cleaning_trash/core/configs/assets/app_images.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 
 class Welcome extends StatelessWidget {
@@ -29,7 +30,7 @@ class Welcome extends StatelessWidget {
 
   Widget _buildOverlay() {
     return Container(
-      color: Colors.green.withOpacity(0.7), // Lớp phủ
+      color: Colors.green.withAlpha((0.7 * 255).round()),
     );
   }
 
@@ -79,7 +80,7 @@ class Welcome extends StatelessWidget {
                   ),
                   onPressed: () {
                     // TODO: Điều hướng tới màn đăng nhập
-                    // context.push('/login');
+                    context.go('/login');
                   },
                   child: const Text('Đăng nhập', style: TextStyle(fontSize: 16)),
                 ),
@@ -95,7 +96,7 @@ class Welcome extends StatelessWidget {
                   ),
                   onPressed: () {
                     // TODO: Điều hướng tới màn đăng ký
-                    // context.push('/register');
+                    context.go('/register');
                   },
                   child: const Text('Đăng ký', style: TextStyle(fontSize: 16)),
                 ),

@@ -9,6 +9,7 @@ class AppColors {
   static const Color lightGrey = Color(0xFFD9D9D9);
   static const Color bone = Color(0xFFF6F7FB);
   static const Color white = Color(0xFFD9D9D9);
+  static const Color green = Color(0xFF669966);
   static const Color primaryGreen = Color(0xFF1DB954);
   static const Color secondaryGreen = Color(0xFF53E88B);
   static const Color tertiaryGreen = Color(0xFF038E4C);
