@@ -16,6 +16,17 @@ class AppImages {
   static const String sat = "${basePath}sat.png";
   static const String lo = "${basePath}lo.png";
   static const String lo1 = "${basePath}lo1.png";
+  static const String reSearch = "${basePath}search.png";
+
+  static const String icon_point = "assets/icons/icon_point.png";
+  static const String star = "assets/icons/star.png";
+  static const String about1 = "${basePath}about1.png";
+  static const String about2 = "${basePath}about2.png";
+  static const String about3 = "${basePath}about3.png";
+  static const String about4 = "${basePath}bag.png";
+  static const String about5 = "${basePath}bin.png";
+  static const String about6 = "${basePath}car.png";
+  static const String about7 = "${basePath}location 1.png";
 
 
 }

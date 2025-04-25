@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class HeaderWithSearchBar extends StatelessWidget {
   const HeaderWithSearchBar({super.key});
@@ -20,9 +21,15 @@ class HeaderWithSearchBar extends StatelessWidget {
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.white, width: 1.2),
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(5),
                 ),
-                child: const Icon(Icons.arrow_back_ios_new, color: Colors.white, size: 10),
+                child: GestureDetector(
+                  onTap: () {
+                    context.go('/home');
+                  },
+                  child: const Icon(Icons.arrow_back_ios_new, color: Colors.white, size: 10),
+                ),
+
               ),
               const SizedBox(width: 60),
               const Text(

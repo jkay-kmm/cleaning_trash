@@ -2,7 +2,7 @@ import 'package:cleaning_trash/presentation/category/widgets/trash_item.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/configs/assets/app_images.dart';
-
+import '../../../core/configs/theme/app_fonts.dart';
 
 class TrashTabBarView extends StatelessWidget {
   final TabController tabController;
@@ -46,7 +46,6 @@ class TrashTabBarView extends StatelessWidget {
               subtitle: 'Thủy tinh phi hữu cơ',
               point: '1500 Point / Kg',
             ),
-
           ],
         ),
         GridView.count(
@@ -64,10 +63,21 @@ class TrashTabBarView extends StatelessWidget {
             ),
           ],
         ),
-        const Center(child: Text('Điện tử')),
-        const Center(child: Text('Thủy tinh')),
-        const Center(child: Text('Giấy')),
+        Center(
+          child:Image.asset(
+            AppImages.reSearch,
+            fit: BoxFit.cover,
+          ),
 
+        ),
+        Center(child: Image.asset(
+          AppImages.reSearch,
+          fit: BoxFit.cover,
+        ),),
+      Center(child: Image.asset(
+          AppImages.reSearch,
+          fit: BoxFit.cover,
+        ),),
       ],
     );
   }
